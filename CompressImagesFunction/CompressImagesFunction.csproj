@@ -10,7 +10,7 @@
       <NativeBinary Include="$(TargetDir)runtimes/linux-x64/native/libgit2-b7bad55.so" />
       <NativeBinary Include="$(TargetDir)runtimes/linux-x64/native/Magick.Native-Q16-x64.dll.so" />
     </ItemGroup>
-    <Copy SourceFiles="@(NativeBinary)" DestinationFiles="@(NativeBinary->'$(TargetDir)bin/%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(NativeBinary)" DestinationFiles="@(NativeBinary-&gt;'$(TargetDir)bin/%(Filename)%(Extension)')" />
   </Target>
 
   <ItemGroup>
@@ -18,7 +18,7 @@
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="5.0.1" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="12.2.0" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.7.0" />
     <PackageReference Include="Octokit" Version="0.50.0" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
   </ItemGroup>
